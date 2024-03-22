@@ -1,0 +1,53 @@
+object FormMain: TFormMain
+  Left = 2170
+  Height = 321
+  Top = 250
+  Width = 421
+  Caption = 'LBYL vs EAFP'
+  ClientHeight = 321
+  ClientWidth = 421
+  OnCreate = FormCreate
+  object btnLBYL: TButton
+    Left = 8
+    Height = 25
+    Top = 8
+    Width = 75
+    Caption = 'LBYL'
+    OnClick = btnLBYLClick
+    TabOrder = 0
+  end
+  object btnEAFP: TButton
+    Left = 88
+    Height = 25
+    Top = 8
+    Width = 75
+    Caption = 'EAFP'
+    OnClick = btnEAFPClick
+    TabOrder = 1
+  end
+  object Memo1: TMemo
+    Left = 8
+    Height = 274
+    Top = 40
+    Width = 408
+    ScrollBars = ssVertical
+    TabOrder = 2
+  end
+  object txtNumTest: TEdit
+    Left = 320
+    Height = 23
+    Top = 8
+    Width = 80
+    NumbersOnly = True
+    TabOrder = 3
+    Text = '100'
+  end
+  object Label1: TLabel
+    Left = 224
+    Height = 15
+    Top = 8
+    Width = 85
+    Caption = 'Number of tests'
+    ParentColor = False
+  end
+end
